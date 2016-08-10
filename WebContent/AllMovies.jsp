@@ -12,7 +12,7 @@
 	<div style="width:1200px;margin-left: auto;margin-right: auto">
            <table cellpadding="10">
                <tr>
-                   <td>Movie code</td>
+                   <th>Movie code</th>
                    <th>Movie Name</th> 
               <th>Release date</th> 
               <th>Language</th>    
