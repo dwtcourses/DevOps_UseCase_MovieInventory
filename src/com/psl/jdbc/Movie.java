@@ -1,15 +1,23 @@
 package com.psl.jdbc;
 
 public class Movie {
+	String id;
 	String name;
 	String date;
 	String language;
 	
-	public Movie(String name, String date, String language) {
+	public Movie(String id,String name, String date, String language) {
 		super();
+		this.id=id;
 		this.name = name;
 		this.date = date;
 		this.language = language;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;

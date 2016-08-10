@@ -12,7 +12,7 @@
 	<div style="width:1200px;margin-left: auto;margin-right: auto">
            <table cellpadding="10">
                <tr>
-                   
+                   <td>Movie code</td>
                    <th>Movie Name</th> 
               <th>Release date</th> 
               <th>Language</th>    
@@ -22,6 +22,7 @@
                
                <c:forEach items="${AllMovies}" var="p">
                    <tr>
+                   		<td>${p.id}</td>
                         <td>${p.name}</td>
                          <td>${p.date}</td>
                           <td>${p.language}</td>

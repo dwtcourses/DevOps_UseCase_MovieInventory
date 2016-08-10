@@ -11,12 +11,12 @@
 <body>
 	
 	<%
-            
+			String movie_code=request.getParameter("movie_code"); 
            String movie_name=request.getParameter("movie_name");
            String rdate=request.getParameter("rdate");
            String language=request.getParameter("language");
            
-            Movie m=new Movie(movie_name,rdate,language);
+            Movie m=new Movie(movie_code,movie_name,rdate,language);
             dataAccess da=new dataAccess();
             da.addNew(m);
             response.sendRedirect("/MovieInventory/AllMovies");

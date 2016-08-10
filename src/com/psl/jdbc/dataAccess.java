@@ -19,7 +19,7 @@ public class dataAccess {
         {
             
             PreparedStatement ps=DBUtils.getPreparedStatement("insert into Movie values(?,?,?,?)");
-            ps.setInt(1, 1);
+            ps.setString(1, m.getId());
             ps.setString(2, m.getName());
             ps.setString(3, m.getDate());
             ps.setString(4, m.getLanguage());
@@ -37,10 +37,10 @@ public class dataAccess {
     {
         List<Movie> ls=new LinkedList<Movie>();
         try {
-            ResultSet rs=  (ResultSet) DBUtils.getPreparedStatement("select m.movieName,m.showDate,m.lang from Movie m").executeQuery();
+            ResultSet rs=  (ResultSet) DBUtils.getPreparedStatement("select m.movieCode,m.movieName,m.showDate,m.lang from Movie m").executeQuery();
             while(rs.next())
             {
-                Movie movie=new Movie(rs.getString(1),rs.getString(2),rs.getString(3));
+                Movie movie=new Movie(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4));
                 ls.add(movie);
             
             }
