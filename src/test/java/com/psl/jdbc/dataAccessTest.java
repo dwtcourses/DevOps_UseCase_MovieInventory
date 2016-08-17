@@ -35,26 +35,26 @@ public class dataAccessTest {
 		dataAccess da=new dataAccess();
 		assertEquals(true, da.checkDate("2016/04/07"));
 	}*/
-	/*
-	@Test
+	
+	/*@Test
 	public void testcheckDuplicateCode() throws ClassNotFoundException {
 		dataAccess da=new dataAccess();
 		assertEquals(true, da.checkDuplicateCode("s2"));
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testcheckDuplicateCode1() throws ClassNotFoundException {
 		dataAccess da=new dataAccess();
 		assertEquals(true, da.checkDuplicateCode("s1"));
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testcheckDuplicateCode3() throws ClassNotFoundException {
 		dataAccess da=new dataAccess();
 		assertEquals(false, da.checkDuplicateCode("s2"));
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testcheckDuplicateCode4() throws ClassNotFoundException {
 		dataAccess da=new dataAccess();
 		assertEquals(false, da.checkDuplicateCode("s1"));

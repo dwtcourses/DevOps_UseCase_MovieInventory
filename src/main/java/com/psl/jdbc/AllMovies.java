@@ -36,8 +36,7 @@ public class AllMovies extends HttpServlet {
             throws ServletException, IOException, ClassNotFoundException
     {
         
-        System.out.println("hello");
-        System.out.println(dataAccess.getAll());
+       
     	request.setAttribute("AllMovies", dataAccess.getAll());
       
      

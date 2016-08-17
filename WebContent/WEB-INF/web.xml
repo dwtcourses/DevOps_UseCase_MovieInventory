@@ -17,7 +17,7 @@
     <description></description>
     <display-name>AllMovies</display-name>
     <servlet-name>AllMovies</servlet-name>
-    <servlet-class>com.psl.jdbc.AllMovies</servlet-class>
+    <servlet-class>main.java.com.psl.jdbc.AllMovies</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AllMovies</servlet-name>

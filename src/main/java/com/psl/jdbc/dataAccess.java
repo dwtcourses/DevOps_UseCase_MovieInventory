@@ -21,14 +21,14 @@ public class dataAccess {
 		List<String> ls=new LinkedList<String>();
         
         try {
-            ResultSet rs=  (ResultSet) DBUtils.getPreparedStatement("select m.movieCode from Movie m","root").executeQuery();
+            ResultSet rs=  (ResultSet) DBUtils.getPreparedStatement("select m.movieCode from movie m","root").executeQuery();
             while(rs.next())
             {
                 
                 ls.add(rs.getString(1));
             
             }
-            System.out.println(code+" "+ls.contains(code));
+          //  System.out.println(code+" "+ls.contains(code));
             if(ls.contains(code))
             	return false;
             
@@ -59,7 +59,7 @@ public class dataAccess {
             if(checkDate(m.getDate()) && checkDuplicateCode(m.getId()))
             {
             	
-            PreparedStatement ps=DBUtils.getPreparedStatement("insert into Movie values(?,?,?,?)","root");
+            PreparedStatement ps=DBUtils.getPreparedStatement("insert into movie values(?,?,?,?)","root");
             
             ps.setString(1, m.getId());
             ps.setString(2, m.getName());
@@ -80,7 +80,7 @@ public class dataAccess {
         List<Movie> ls=new LinkedList<Movie>();
         
         try {
-            ResultSet rs=  (ResultSet) DBUtils.getPreparedStatement("select m.movieCode,m.movieName,m.showDate,m.lang from Movie m","root").executeQuery();
+            ResultSet rs=  (ResultSet) DBUtils.getPreparedStatement("select m.movieCode,m.movieName,m.showDate,m.lang from movie m","root").executeQuery();
             while(rs.next())
             {
                 Movie movie=new Movie(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4));
