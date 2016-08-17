@@ -15,22 +15,12 @@ import org.junit.Test;
 
 public class DBUtilsTest {
 
-	/*@Test
+	@Test
 	public void testGetPreparedStatement() throws ClassNotFoundException, SQLException {
 		
 		DBUtils db = new DBUtils();
-		db.getPreparedStatement("select m.movieCode,m.movieName,m.showDate,m.lang from Movie m","root1");
-		System.out.println("implemented");
-	}*/
+		db.getPreparedStatement("select m.movieCode,m.movieName,m.showDate,m.lang from movie m","root");
+		//System.out.println("implemented");
+	}
 	
-
-	/*@Test
-	public void testGetPreparedStatement1() throws ClassNotFoundException, SQLException {
-		
-		DBUtils db = new DBUtils();
-		db.getPreparedStatement("select m.movieCode,m.movieName,m.showDate,m.lang from Movie m","root");
-		System.out.println("not implemented");
-	}*/
-	
-
 }
