@@ -24,9 +24,9 @@ public class dataAccessTest {
 		assertEquals(false, da.checkDate("2016/04/07"));
 	}
 	
-	@Test
+	/*@Test
 	public void testcheckDuplicateCode1() throws ClassNotFoundException {
 		dataAccess da=new dataAccess();
 		assertEquals(false, da.checkDuplicateCode("a1"));
-	}
+	}*/
 }
