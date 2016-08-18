@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>MovieInventory</name>
   <build>
+  <finalName>MovieInventory</finalName>
     <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
